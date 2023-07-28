@@ -13,18 +13,18 @@ public class App {
 
         List<Konto> konten = new ArrayList<Konto>(Arrays.asList(konto1, konto2, konto3));
 
-        outputAll(konten);
+        output(konten);
         konten.get(0).setKontostand(konten.get(0).getKontostand() * 2);
         konten.get(1).setKontostand(konten.get(1).getKontostand() * 3);
         konten.get(2).setKontostand(konten.get(2).getKontostand() * 10);
-        outputAll(konten);
+        output(konten);
     }
 
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
 
-    private static void outputAll(List<Konto> konten) {
+    private static void output(List<Konto> konten) {
         for (Konto konto : konten) {
             output(String.valueOf(konto.getKontostand()));
         }

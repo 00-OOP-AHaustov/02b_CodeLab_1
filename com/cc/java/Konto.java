@@ -14,8 +14,8 @@ public class Konto {
         return this.kontostand;
     }
 
-    public void setKontostand(int i) {
-        this.kontostand = i;
+    public void setKontostand(int kontostand) {
+        this.kontostand = kontostand;
     }
 
 }
